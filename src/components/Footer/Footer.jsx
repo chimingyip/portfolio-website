@@ -3,7 +3,7 @@ import { Container } from 'react-bootstrap';
 import { Link } from 'react-scroll';
 import PortfolioContext from '../../context/context';
 import GithubButtons from '../GithubButtons/GithubButtons';
-import DevPostIcon from '../../images/svg/devpost-iconsvg.svg';
+import DevPostIcon from '../../images/svg/devpost.svg';
 import GitHubIcon from '../../images/svg/github.svg';
 import LinkedInIcon from '../../images/svg/linkedin2.svg';
 
@@ -11,7 +11,6 @@ import { githubButtons } from '../../mock/data';
 
 const Footer = () => {
   const { footer } = useContext(PortfolioContext);
-  const { networks } = footer;
   const { isEnabled } = githubButtons;
 
   return (
@@ -23,29 +22,13 @@ const Footer = () => {
           </Link>
         </span>
         <div className="social-links">
-          {/* {networks &&
-            networks.map((network) => {
-              const { id, name, url } = network;
-              return (
-                <a
-                  key={id}
-                  href={url || 'https://github.com/cobidev/gatsby-simplefolio'}
-                  rel="noopener noreferrer"
-                  target="_blank"
-                  aria-label={name}
-                >
-                  <i className={`fa fa-${name || 'refresh'} fa-inverse`} />
-                </a>
-              );
-            })} */}
-
-            <a>
+            <a href="https://www.linkedin.com/in/chi-ming-yip-318164191/" rel="noopener noreferrer" target="_blank" aria-label="LinkedIn">
               <LinkedInIcon />
             </a>
-            <a>
+            <a href="https://github.com/chimingyip" rel="noopener noreferrer" target="_blank" aria-label="LinkedIn">
               <GitHubIcon />
             </a>
-            <a>
+            <a href="https://devpost.com/chimingyip" rel="noopener noreferrer" target="_blank" aria-label="DevPost">
               <DevPostIcon />
             </a>
         </div>

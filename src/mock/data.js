@@ -62,27 +62,6 @@ export const contactData = {
   email: '',
 };
 
-// FOOTER DATA
-export const footerData = {
-  networks: [
-    {
-      id: nanoid(),
-      name: 'linkedin',
-      url: 'https://www.linkedin.com/in/chi-ming-yip-318164191/',
-    },
-    {
-      id: nanoid(),
-      name: 'github',
-      url: 'https://github.com/chimingyip',
-    },
-    {
-      id: nanoid(),
-      name: 'devpost',
-      url: 'https://devpost.com/chimingyip'
-    }
-  ],
-};
-
 // Github start/fork buttons
 export const githubButtons = {
   isEnabled: false, // set to false to disable the GitHub stars/fork buttons
