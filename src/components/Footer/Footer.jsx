@@ -3,6 +3,9 @@ import { Container } from 'react-bootstrap';
 import { Link } from 'react-scroll';
 import PortfolioContext from '../../context/context';
 import GithubButtons from '../GithubButtons/GithubButtons';
+import DevPostIcon from '../../images/svg/devpost-iconsvg.svg';
+import GitHubIcon from '../../images/svg/github.svg';
+import LinkedInIcon from '../../images/svg/linkedin2.svg';
 
 import { githubButtons } from '../../mock/data';
 
@@ -20,7 +23,7 @@ const Footer = () => {
           </Link>
         </span>
         <div className="social-links">
-          {networks &&
+          {/* {networks &&
             networks.map((network) => {
               const { id, name, url } = network;
               return (
@@ -34,14 +37,21 @@ const Footer = () => {
                   <i className={`fa fa-${name || 'refresh'} fa-inverse`} />
                 </a>
               );
-            })}
+            })} */}
+
+            <a>
+              <LinkedInIcon />
+            </a>
+            <a>
+              <GitHubIcon />
+            </a>
+            <a>
+              <DevPostIcon />
+            </a>
         </div>
         <hr />
         <p className="footer__text">
-          © {new Date().getFullYear()} - Template developed by{' '}
-          <a href="https://github.com/cobidev" target="_blank" rel="noopener noreferrer">
-            Jacobo Martínez
-          </a>
+          © {new Date().getFullYear()} - Chi Ming Yip
         </p>
 
         {isEnabled && <GithubButtons />}
