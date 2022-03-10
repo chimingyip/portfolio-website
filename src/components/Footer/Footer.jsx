@@ -2,17 +2,12 @@ import React, { useContext } from 'react';
 import { Container } from 'react-bootstrap';
 import { Link } from 'react-scroll';
 import PortfolioContext from '../../context/context';
-import GithubButtons from '../GithubButtons/GithubButtons';
 import DevPostIcon from '../../images/svg/devpost.svg';
 import GitHubIcon from '../../images/svg/github.svg';
 import LinkedInIcon from '../../images/svg/linkedin2.svg';
 
-import { githubButtons } from '../../mock/data';
 
 const Footer = () => {
-  const { footer } = useContext(PortfolioContext);
-  const { isEnabled } = githubButtons;
-
   return (
     <footer className="footer navbar-static-bottom">
       <Container>
@@ -36,8 +31,6 @@ const Footer = () => {
         <p className="footer__text">
           © {new Date().getFullYear()} - Chi Ming Yip
         </p>
-
-        {isEnabled && <GithubButtons />}
       </Container>
     </footer>
   );
