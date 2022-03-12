@@ -2,16 +2,16 @@ import { nanoid } from 'nanoid';
 
 // HEAD DATA
 export const headData = {
-  title: '', // e.g: 'Name | Developer'
-  lang: '', // e.g: en, es, fr, jp
-  description: '', // e.g: Welcome to my website
+  title: 'Chi Ming Yip | Software Engineer', // e.g: 'Name | Developer'
+  lang: 'en', // e.g: en, es, fr, jp
+  description: 'My Developer Portfolio', // e.g: Welcome to my website
 };
 
 // HERO DATA
 export const heroData = {
   title: '',
   name: 'Chi Ming Yip',
-  subtitle: 'I\'m a Software Developer',
+  subtitle: 'I\'m a Software Engineer',
   cta: 'Find out more',
 };
 
@@ -23,6 +23,15 @@ export const aboutData = {
   paragraphThree: '',
   resume: 'https://www.resumemaker.online/es.php', // if no resume, the button will not show up
 };
+
+export const experienceData = [
+  {
+
+  },
+  {
+    
+  }
+]
 
 // PROJECTS DATA
 export const projectsData = [
