@@ -68,7 +68,7 @@ export const projectsData = [
 export const contactData = {
   cta: '',
   btn: '',
-  email: '',
+  email: 'cmyip99@gmail.com',
 };
 
 // Github start/fork buttons
