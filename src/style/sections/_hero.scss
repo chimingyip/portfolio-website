@@ -1,13 +1,20 @@
 #hero {
   min-height: 100vh;
   height: 100vh;
+  display: flex;
   align-items: center;
   border-bottom: 0px;
+  // background: $white-color;
   font-weight: 400;
+  // color: $dark-blue-text;
   color: $white-color;
+  padding: 0rem 5.6rem;
   margin-bottom: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
   z-index: -1;
-  padding-left: 50rem;
 
   // If you want to set a background image on the hero section, uncomment these with yout custom image
 
@@ -18,14 +25,6 @@
   @include respond(phone) {
     padding: 0rem $default-font-size;
   }
-
-  .hero-container {
-    margin: 0;
-    position: absolute;
-    left: 15%;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);  }
 
   .hero-title {
     font-size: 5.6rem;
